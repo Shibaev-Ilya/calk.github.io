@@ -28,6 +28,7 @@ button:focus {
 }
 
 .wrapCalc {
+  position: absolute;
   width: 340px;
   height: 490px;
   background: rgb(250, 250, 250);
@@ -35,7 +36,27 @@ button:focus {
   grid-template-rows: repeat(7, 70px);
   grid-template-columns: repeat(4, 85px);
   box-shadow: 3px 20px 34px 1px rgba(0, 0, 0, 0.75);
-  margin: 100px auto;
+  margin: 0;
+  top: 20%;
+  left: 40%;
+}
+
+.forDrop {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 252, 98, 0.705);
+  border: 1px solid rgb(180, 168, 3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+  right: -20px;
+  cursor: grab;
+}
+.forDrop:active {
+  cursor: grabbing;
 }
 
 .btnCalc {
